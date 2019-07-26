@@ -27,7 +27,7 @@ const ScoreTable = props => {
       <ScoreRow
         metric={probs[1].toPrecision(4)}
         name={probs[0]}
-        key={probs[1]}
+        key={probs[0]}
       />
     )
   );
