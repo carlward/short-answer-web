@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactTable from "react-table";
 import TextArea from './TextArea.js';
 import AnswerScoreResult from './AnswerScoreResult.js';
 const ENDPOINT = 'https://8wplgcc305.execute-api.us-west-2.amazonaws.com/prod/score-answers';

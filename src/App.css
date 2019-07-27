@@ -1,18 +1,36 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #282c34;
+  display: flex;
+}
+
+button {
+  background: lightgrey;
+  padding: 5px;
+  width: 100px;
+  border: 0;
+  border-radius: 5px;
+}
+
+label {
+  text-align: right;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+td {
+  padding: 5px;
+}
+
 .App {
-  /* background-color: #282c34; */
   text-align: center;
   align-items: center;
   color: white;
   min-height: 100vh;
-  display:flex;
-  flex-direction: column;
-}
-
-html,body{ height:100%; }
-body{
-  background:#282c34;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column;
 }
 
 .App-header {
@@ -25,20 +43,53 @@ body{
   display: grid;
   margin: 2rem auto 0 auto;
   padding: 1em;
+  width: 600px;
   align-items: right;
 }
 
-button {
-  background: lightgrey;
-  padding: 5px;
-  width: 200px;
-  /* width: 610px; */
-  border: 0;
-  border-radius:5px;
+.App-link {
+  color: #61dafb;
 }
 
-label {
-  padding: 0.5em 0.5em 0.5em 0;
+.csv-upload-button {
+  width: 50px
+}
+
+.csv-files {
+  display: flex;
+  flex-direction: column;
+}
+
+.csv-upload {
+  display: grid;
+  margin: 0px auto 0 auto;
+  padding: 0em;
+  width: 600px;
+  align-items: right;
+}
+
+.css-ue4akr {
+  vertical-align: middle;
+}
+
+.csvlabel, .csv-file, .csv-upload-container {
+  vertical-align: top;
+  text-align: left;
+  margin: auto;
+  padding: 5px;
+}
+
+.csv-submit {
+  display: grid;
+  padding: 5px;
+}
+
+.csv-submit-button {
+  width: 100px;
+}
+
+.upload-icon {
+  vertical-align: middle;
 }
 
 .form-input {
@@ -62,14 +113,18 @@ label {
   border-spacing: 50px 0;
 }
 
-
 .form-input.input-error {
   border-width: 2px;
   border-color: red;
 }
 
-td {
-  padding: 2px 0;
+.csv-Output {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: auto;
+  padding: 20px;
+  font-size: 16px;
+  color: #61dafb;
 }
 
 @media (min-width: 600px) {
@@ -77,18 +132,20 @@ td {
     grid-template-columns: 200px 1fr;
     grid-gap: 16px;
   }
-
+  .csv-upload {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+  .csv-submit {
+    grid-template-columns: 200px 1fr;
+  }
   label {
     grid-column: 1 / 2;
   }
-
-  textarea,
-  .result-table,
-  button {
+  .csv-submit-button, textarea, .result-table, .csv-file, button {
     grid-column: 2 / 3;
   }
-}
-
-.App-link {
-  color: #61dafb;
+  .css-ue4akr, .csv-upload-container {
+    grid-column: 3 /4
+  }
 }
