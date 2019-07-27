@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "papaparse": "^5.0.1",
     "react": "^16.8.6",
+    "react-csv": "^1.1.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-spinners": "^0.5.13"
   },
   "scripts": {
     "predeploy": "npm run build",

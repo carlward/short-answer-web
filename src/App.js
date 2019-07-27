@@ -1,7 +1,6 @@
 import React from 'react';
-// import logo from './logo.svg';
 import AnswerBoxes from './AnswerBoxes.js'
-
+import CSVCompare from './CSVCompare.js';
 import './App.css';
 
 function App() {
@@ -12,6 +11,9 @@ function App() {
       </header>
       <h3>Grader Demo</h3>
       <AnswerBoxes />
+      <br />
+      <h3>CSV Upload</h3>
+      <CSVCompare />
     </div>
   );
 }
