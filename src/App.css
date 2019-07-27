@@ -109,6 +109,8 @@ td {
   padding: 5px;
   font-size: 14px;
   display: block;
+  border-collapse: separate;
+  border-spacing: 50px 0;
 }
 
 .form-input.input-error {
